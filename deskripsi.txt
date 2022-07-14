@@ -1,0 +1,21 @@
+MVC => Konsep / Metode Bisa Digunakan Semua Bahasa Pemprograman (Tidak Masalah Kalau Tidak Pakai, Sesuai Dengan Kebutuhan) Rekomendasikan Menggunakan Karena Permudah Kita Untuk Bikin Sebuah Aplikasi
+Model => Ambil Data Dari Databse
+View => Mengambil Data Dari Controller
+Controller => Mengambil Data Dari Model
+DB => SQL Atau NoSQL
+
+- Request => Apa Yang Dibutuhkan Oleh User (Yang Berada View), Contoh Dia Butuh Hero Mobile Legend, Saat User Klik Hero Mobile Legend Itu Terjadi Namanya Request,
+Setelah Itu Dikirim Ke Controller
+- Controller Fungsinya Sebagai Logika Perhitungan (Logic / Gerbang Utama / Routing)
+- Endpoint Adalah URL Yang Di Request, Jadi Setiap Fitur Punya Endpoint
+- Controller Harus Nangkap Data Yang Dibutuhkan (Request) Oleh User
+- Saat Cek Bagian Model Cari List Hero Mobile Legend (Interaksi Antara Sistem Dengan Database)
+- Controller dan Model Bisa Validasi (Rekomendasikan Controller)
+- Model Untuk Bermain Query - Query SQL Seperti SELECT * FROM , INSERT INTO
+- Jika Datanya Ada Di Database, Maka Model Akan Balikin Datanya Ke Controller, Controller Bakal Balikin Lagi Berupa Response
+
+- Masih Banyak Menggunakan Mysql Karena NoSQL Masih Baru (Intinya Sama Saja, Sama - Sama Data)
+
+Alur Kerja :
+
+
