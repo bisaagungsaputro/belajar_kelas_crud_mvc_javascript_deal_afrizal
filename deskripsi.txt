@@ -17,5 +17,79 @@ Setelah Itu Dikirim Ke Controller
 - Masih Banyak Menggunakan Mysql Karena NoSQL Masih Baru (Intinya Sama Saja, Sama - Sama Data)
 
 Alur Kerja :
+- Install node -v (Cek Version)
+- Install npm -v (Cek Version)
+1. npm init -y => Supaya Kita Bisa Pakai Library & Modul Bawaan JavaScript
+2. npm => Node Package Manager (Sama Seperti Composer)
+3. node server => Testing (Node)
+4. server.js => Jadi File Utama Di Server JavaScript Kita
+5. node.js => Server Side Scripting Dari JavaScript Itu node.js (Frameworknya ExpressJS)
+- Kalau di PHP => Apache (Menggunakan Sofware XAMPP, LARAGON)
+6. package.json => Ada server.js, index.js, main.js (Berbeda - Beda Tergantung Initnya Oleh Sebab Itu Harus Sesuai Nama server.js)
+
+7. package.json :
+Data Keluaran / Meta Data Server Kita Seperti : name, version (Kebutuhan Deployment Kalau Mau Ke Server, Cloud)
+  "name": "belajar_kelas_crud_mvc_javascript_deal_afrizal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+
+8. package.json :
+Wajib Ada Script Start : "start": "node server.js"
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bisaagungsaputro/belajar_kelas_crud_mvc_javascript_deal_afrizal.git"
+  },
+
+9. Rekomendasikan Buat File server.js Sebelum Di Init Terminal : npm init -y (Supaya Muncul "start": "node server.js" Dan "main": "server.js",)
+10. Fungsi npm => npm start Dari => "start": "node server.js"
+
+- "test": "echo \"Error: no test \" && exit 1", => Untuk Testing Sebelum Publish
+
+  "scripts": {
+    "test": "echo \"Error: no test \" && exit 1",
+    "start": "node server.js"
+  },
+
+11. const => Variable JavaScript Yang Tidak Berubah Data Nilainya
+    let => Variable JavaScript Yang Berubah Data Nilainya
+
+12. ExpressJS => Frameworknya Backend JavaScript
+- ExpressJS => Untuk Kasih HTTP, Request & Response
+- Bisa Pakai NodeJS => Cuma Script Panjang Sekali, Beda Sama ExpressJS Dia Bakal Lebih Singkat Scriptnya
+
+- import => Untuk FrontJS
+- require => Untuk BackendJS (Bisa Pakai import Tapi Tidak Rekomendasikan Karena Bukan Standarnya)
+
+- Frontend Biasanya Untuk Server => 8000, 8080, 9000
+- Backend Biasanya Untuk Server => 3000, 3001, 3002
+
+- npm i express --save => dependencies Express Untuk Kita Running Server Dengan Ketik Terminal : npm start
+=> Bisa Jadi Best API, REST API, JSON Ke Mobile
+
+13. Install : npm i nodemon
+nodemon => Berada Diluar (Running Server Supaya Kita Gak Perlu Save Ulang Save Ulang Otomatis Ketika Codingan Kita Diberubah, Tinggal Save Saja Servernya Bakal Otomatis Restart Sendiri, Gak Perlu Dimatiin / Gak Perlu Dinyalain Lagi / Hot Reload)
+express => Berada Didalam
+
+  "homepage": "https://github.com/bisaagungsaputro/belajar_kelas_crud_mvc_javascript_deal_afrizal#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
+  }
+}
+
+Cara Menggunakan nodemon Dengan Cara :
+
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+
+dependencies Adalah Tempat Untuk Package
+
+package-lock.json => Untuk Mengunci Package JSON Yang Sudah Kita Setup
 
 
